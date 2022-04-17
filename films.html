@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 
-    <title>Film List</title>
+    <title>Star Wars - Film List</title>
 </head>
 <body onload="films()">
     <header>
@@ -19,13 +19,15 @@
     </header>
 
     <main>
-        <section>
-            <h1>List of Films</h1>
-            <ul id="filmList">
-            </ul>
-        </section>
+        <h1>List of Films</h1>
+        <ul id="filmList">
+        </ul>
+        
     </main>
 
+    <section id="filmInfoSection">
+    </section>
+    <button id="filmButton" onClick="window.location.reload();">Pick Another Film</button>
 
     
     <script src="main.js"></script>
