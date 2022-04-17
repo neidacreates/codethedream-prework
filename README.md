@@ -6,7 +6,7 @@ Star Wars information page that fetches data from Star Wars API (SWAPI - https:/
 
 ## Instructions
 
-The site is live at 
+The site is live at https://codethedream-prework.netlify.app/
 
 You can also download files from github and open the index.html file to interact with it locally.
 
