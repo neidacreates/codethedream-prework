@@ -16,8 +16,8 @@ function character() {
             // console.log(data.results[0].birth_year)
             // console.log(data.results[0].homeworld)
 
-            var tempHome = (data.results[0].homeworld);
-            var tempFilms = (data.results[0].films);
+            let tempHome = (data.results[0].homeworld);
+            let tempFilms = (data.results[0].films);
             
             //get info for Leia's home planet
             fetch(`${tempHome}`)
@@ -51,6 +51,7 @@ function character() {
 function getLeiaFilms (tempFilms) {
     const leiaFilmList = document.getElementById("leiaFilmList");
     for (filmAddress in tempFilms) {
+        // test:
         // console.log(tempFilms[filmAddress])
         fetch (`${tempFilms[filmAddress]}`)
             .then(res => res.json())
@@ -106,8 +107,9 @@ function getFilmDetails(filmID) {
     fetch(`https://swapi.dev/api/films/${filmID}`)
         .then(res => res.json())
         .then(data => {
-            console.log(data);
-            console.log(data.title);
+            // tests:
+            // console.log(data);
+            // console.log(data.title);
 
             const filmTitle = document.createElement("h2");
             const filmDate = document.createElement("p");
@@ -132,8 +134,8 @@ function getFilmDetails(filmID) {
     })
 }
 
-
-//get character info for three characters to put on homepage
+// abandoned attempt
+// get character info for three characters to put on homepage
 // function characters() {
 //     var counting = 1
 
@@ -142,14 +144,14 @@ function getFilmDetails(filmID) {
 //         .then(res => res.json())
 //         .then (data => {
 //         console.log(data)
-//         var luke_name=document.getElementById("luke_name")
+//         var luke_name = document.getElementById("luke_name")
 //     })
 
 //     .catch(err => {
 //     console.log(`error ${err}`)
 //     })
 
-//     counting ++;
+//     counting++;
 
 //     }
     
