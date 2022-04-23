@@ -101,7 +101,7 @@ function films() {
 //get info for one film and display it underneath the films list on the films page
 function getFilmDetails(filmID) {
     //since index starts at 0, add 1 for the fetch link (swapi links start at 1)
-    filmID++;
+    ++filmID;
     const filmInfoSection = document.getElementById("filmInfoSection");
     //fetch each film
     fetch(`https://swapi.dev/api/films/${filmID}`)
