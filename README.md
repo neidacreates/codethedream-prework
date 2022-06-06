@@ -2,7 +2,7 @@
 
 ## Description 
 
-Star Wars information page that fetches data from Star Wars API (SWAPI - https://swapi.dev/)
+Star Wars information page that fetches data from the Star Wars API (SWAPI - https://swapi.dev/)
 
 ## Instructions
 
